@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Madimi+One&family=Modak&family=Pacifico&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+.main-title,
+.title {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a,
+.logo  a{
+  font-family: "Rubik Bubbles", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  box-shadow: 0 4px 2px -2px rgb(238, 159, 159);
+}
+
+.logo a {
+  font-size: 50px;
+  color: rgb(255, 0, 93);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  font-size: 25px;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  background-color: #333;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 167, 108);
+}
+
+.nav-links a:focus {
+  color: rgb(138, 185, 255);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 20rem;
+  margin: 0rem 0;
+  color: rgb(255, 149, 171);
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 8vw; /* Reduce el tamaño de la fuente en tablets y dispositivos pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 6vw; /* Reduce aún más el tamaño en dispositivos muy pequeños */
+  }
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan */
+  gap: 2rem; /* Ajusta el espacio entre imágenes */
+  margin: 1rem 0;
+}
+
+.image-gallery img {
+  width: 15%; /* Tamaño inicial para pantallas grandes */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Ajustes específicos para dispositivos más pequeños */
+@media (max-width: 1024px) {
+  .image-gallery img {
+    width: 20%; /* Aumenta el ancho relativo en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .image-gallery img {
+    width: 30%; /* Aumenta el ancho relativo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-gallery img {
+    width: 45%; /* Aumenta el ancho relativo en pantallas muy pequeñas */
+  }
+}
+
+.info {
+  text-align: center;
+  margin: 4rem 4rem;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color:radialgradient() ;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+}
+
+.title {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: rgb(255, 78, 113);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* Efecto de zoom al seleccionar */
+.icon:hover {
+  transform: scale(3.2);
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: rgb(255, 112, 238);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #666;
+}
